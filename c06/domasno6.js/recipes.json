@@ -1,0 +1,13 @@
+{
+  "ime": "Burek",
+  "sostojki": [
+    {
+      "ime": "Urda",
+      "kolicina": 100
+    },
+    {
+      "ime": "Kori",
+      "kolicina": 3
+    }
+  ]
+}

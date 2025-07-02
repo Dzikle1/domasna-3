@@ -1,6 +1,6 @@
 const http = require("http");
 
-const { convertMilesToKm } = require("./convert");
+const { convertMilesToKm, fahrenheitToCelsius } = require("./convert");
 
 // Klientot isprakja baranje (req)
 // Serverot vrakja odgovor (res)
@@ -61,7 +61,7 @@ server.listen(3000, () => console.log("Server started at port 3000!"));
       const parsedData = JSON.parse(data);
       console.log("parsed data", parsedData);
 
-      const convertedVal = convertfahrenheitToCelsius(parsedData.celsius);
+      const convertedVal = convert fahrenheitToCelsius (parsedData.celsius);
 
       res.writeHead(200, { "content-type": "text/plain" });
       // res.writeHead(200, { "content-type": "application/json"})
